@@ -1,0 +1,1033 @@
+{
+  "entradas": [
+    "fc_kgf_cm2",
+    "fy_kgf_cm2",
+    "pisos",
+    "vanos_X",
+    "vanos_Y",
+    "Lx_cm",
+    "Ly_cm",
+    "altura_total_cm",
+    "piso1_altura_cm",
+    "piso2_altura_cm",
+    "luz_media_X_cm",
+    "luz_media_Y_cm",
+    "CV_luces_X",
+    "CV_luces_Y",
+    "U",
+    "Z",
+    "S",
+    "TP_s",
+    "TL_s",
+    "qv_piso_kgf_cm2",
+    "acabados_kgf_cm2",
+    "tabiques_fijos_kgf_cm2",
+    "peso_sismico_kgf",
+    "t_maciza_cm",
+    "t_aligerada_cm",
+    "fraccion_area_maciza",
+    "cantidad_bloques",
+    "piso_inicio_bloque2",
+    "col_esquina_bloque1_bX_cm",
+    "col_esquina_bloque1_bY_cm",
+    "col_exterior_bloque1_bX_cm",
+    "col_exterior_bloque1_bY_cm",
+    "col_interior_bloque1_bX_cm",
+    "col_interior_bloque1_bY_cm",
+    "viga_X_bloque1_base_cm",
+    "viga_X_bloque1_peralte_cm",
+    "viga_Y_bloque1_base_cm",
+    "viga_Y_bloque1_peralte_cm",
+    "col_esquina_bloque2_bX_cm",
+    "col_esquina_bloque2_bY_cm",
+    "col_exterior_bloque2_bX_cm",
+    "col_exterior_bloque2_bY_cm",
+    "col_interior_bloque2_bX_cm",
+    "col_interior_bloque2_bY_cm",
+    "viga_X_bloque2_base_cm",
+    "viga_X_bloque2_peralte_cm",
+    "viga_Y_bloque2_base_cm",
+    "viga_Y_bloque2_peralte_cm",
+    "qv_cubierta_kgf_cm2",
+    "luz_X_1_cm",
+    "luz_X_2_cm",
+    "luz_X_3_cm",
+    "luz_X_4_cm",
+    "luz_X_5_cm",
+    "luz_Y_1_cm",
+    "luz_Y_2_cm",
+    "luz_Y_3_cm",
+    "luz_Y_4_cm",
+    "luz_Y_5_cm",
+    "piso1_peso_sismico_kgf",
+    "piso1_CM_X_cm",
+    "piso1_CM_Y_cm",
+    "piso1_inercia_peso_kgf_cm2",
+    "piso2_peso_sismico_kgf",
+    "piso2_CM_X_cm",
+    "piso2_CM_Y_cm",
+    "piso2_inercia_peso_kgf_cm2",
+    "piso3_altura_cm",
+    "piso3_peso_sismico_kgf",
+    "piso3_CM_X_cm",
+    "piso3_CM_Y_cm",
+    "piso3_inercia_peso_kgf_cm2",
+    "piso4_altura_cm",
+    "piso4_peso_sismico_kgf",
+    "piso4_CM_X_cm",
+    "piso4_CM_Y_cm",
+    "piso4_inercia_peso_kgf_cm2",
+    "piso5_altura_cm",
+    "piso5_peso_sismico_kgf",
+    "piso5_CM_X_cm",
+    "piso5_CM_Y_cm",
+    "piso5_inercia_peso_kgf_cm2",
+    "paño_X1_Y1_macizo",
+    "paño_X1_Y2_macizo",
+    "paño_X1_Y3_macizo",
+    "paño_X1_Y4_macizo",
+    "paño_X1_Y5_macizo",
+    "paño_X2_Y1_macizo",
+    "paño_X2_Y2_macizo",
+    "paño_X2_Y3_macizo",
+    "paño_X2_Y4_macizo",
+    "paño_X2_Y5_macizo",
+    "paño_X3_Y1_macizo",
+    "paño_X3_Y2_macizo",
+    "paño_X3_Y3_macizo",
+    "paño_X3_Y4_macizo",
+    "paño_X3_Y5_macizo",
+    "paño_X4_Y1_macizo",
+    "paño_X4_Y2_macizo",
+    "paño_X4_Y3_macizo",
+    "paño_X4_Y4_macizo",
+    "paño_X4_Y5_macizo",
+    "paño_X5_Y1_macizo",
+    "paño_X5_Y2_macizo",
+    "paño_X5_Y3_macizo",
+    "paño_X5_Y4_macizo",
+    "paño_X5_Y5_macizo"
+  ],
+  "objetivos": [
+    "Tx_s",
+    "Ty_s",
+    "V_modal_ajustado_X_kgf",
+    "V_modal_ajustado_Y_kgf",
+    "desplazamiento_techo_max_X_cm",
+    "desplazamiento_techo_max_Y_cm",
+    "deriva_max_X",
+    "deriva_max_Y"
+  ],
+  "dominio": {
+    "fc_kgf_cm2": {
+      "min": 210.0,
+      "max": 280.0,
+      "valores": [
+        210.0,
+        280.0
+      ],
+      "admite_ausencia": false
+    },
+    "fy_kgf_cm2": {
+      "min": 4200.0,
+      "max": 4200.0,
+      "valores": [
+        4200.0
+      ],
+      "admite_ausencia": false
+    },
+    "pisos": {
+      "min": 2.0,
+      "max": 5.0,
+      "valores": [
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "admite_ausencia": false
+    },
+    "vanos_X": {
+      "min": 2.0,
+      "max": 5.0,
+      "valores": [
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "admite_ausencia": false
+    },
+    "vanos_Y": {
+      "min": 2.0,
+      "max": 5.0,
+      "valores": [
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "admite_ausencia": false
+    },
+    "Lx_cm": {
+      "min": 600.0,
+      "max": 3000.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "Ly_cm": {
+      "min": 600.0,
+      "max": 3000.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "altura_total_cm": {
+      "min": 540.0,
+      "max": 1680.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso1_altura_cm": {
+      "min": 270.0,
+      "max": 360.0,
+      "valores": [
+        270.0,
+        280.0,
+        290.0,
+        300.0,
+        310.0,
+        320.0,
+        330.0,
+        340.0,
+        350.0,
+        360.0
+      ],
+      "admite_ausencia": false
+    },
+    "piso2_altura_cm": {
+      "min": 270.0,
+      "max": 330.0,
+      "valores": [
+        270.0,
+        280.0,
+        290.0,
+        300.0,
+        310.0,
+        320.0,
+        330.0
+      ],
+      "admite_ausencia": false
+    },
+    "luz_media_X_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "luz_media_Y_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "CV_luces_X": {
+      "min": 0.0,
+      "max": 0.1875,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "CV_luces_Y": {
+      "min": 0.0,
+      "max": 0.1775932201742281,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "U": {
+      "min": 1.0,
+      "max": 1.3,
+      "valores": [
+        1.0,
+        1.3
+      ],
+      "admite_ausencia": false
+    },
+    "Z": {
+      "min": 0.1,
+      "max": 0.45,
+      "valores": [
+        0.1,
+        0.25,
+        0.35,
+        0.45
+      ],
+      "admite_ausencia": false
+    },
+    "S": {
+      "min": 0.8,
+      "max": 1.6,
+      "valores": [
+        0.8,
+        1.0,
+        1.1,
+        1.15,
+        1.2,
+        1.3,
+        1.4,
+        1.6
+      ],
+      "admite_ausencia": false
+    },
+    "TP_s": {
+      "min": 0.3,
+      "max": 0.9,
+      "valores": [
+        0.3,
+        0.4,
+        0.6,
+        0.9
+      ],
+      "admite_ausencia": false
+    },
+    "TL_s": {
+      "min": 1.6,
+      "max": 3.0,
+      "valores": [
+        1.6,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "admite_ausencia": false
+    },
+    "qv_piso_kgf_cm2": {
+      "min": 0.02,
+      "max": 0.05,
+      "valores": [
+        0.02,
+        0.025,
+        0.04,
+        0.05
+      ],
+      "admite_ausencia": false
+    },
+    "acabados_kgf_cm2": {
+      "min": 0.008,
+      "max": 0.012,
+      "valores": [
+        0.008,
+        0.01,
+        0.012
+      ],
+      "admite_ausencia": false
+    },
+    "tabiques_fijos_kgf_cm2": {
+      "min": 0.0,
+      "max": 0.015,
+      "valores": [
+        0.0,
+        0.01,
+        0.015
+      ],
+      "admite_ausencia": false
+    },
+    "peso_sismico_kgf": {
+      "min": 66067.65000000004,
+      "max": 3784325.3625,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "t_maciza_cm": {
+      "min": 15.0,
+      "max": 16.0,
+      "valores": [
+        15.0,
+        16.0
+      ],
+      "admite_ausencia": false
+    },
+    "t_aligerada_cm": {
+      "min": 20.0,
+      "max": 30.0,
+      "valores": [
+        20.0,
+        25.0,
+        30.0
+      ],
+      "admite_ausencia": false
+    },
+    "fraccion_area_maciza": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "cantidad_bloques": {
+      "min": 1.0,
+      "max": 2.0,
+      "valores": [
+        1.0,
+        2.0
+      ],
+      "admite_ausencia": false
+    },
+    "piso_inicio_bloque2": {
+      "min": 3.0,
+      "max": 4.0,
+      "valores": [
+        3.0,
+        4.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_esquina_bloque1_bX_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_esquina_bloque1_bY_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_exterior_bloque1_bX_cm": {
+      "min": 30.0,
+      "max": 45.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0,
+        45.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_exterior_bloque1_bY_cm": {
+      "min": 30.0,
+      "max": 45.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0,
+        45.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_interior_bloque1_bX_cm": {
+      "min": 30.0,
+      "max": 60.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        60.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_interior_bloque1_bY_cm": {
+      "min": 30.0,
+      "max": 60.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        60.0
+      ],
+      "admite_ausencia": false
+    },
+    "viga_X_bloque1_base_cm": {
+      "min": 25.0,
+      "max": 25.0,
+      "valores": [
+        25.0
+      ],
+      "admite_ausencia": false
+    },
+    "viga_X_bloque1_peralte_cm": {
+      "min": 50.0,
+      "max": 60.0,
+      "valores": [
+        50.0,
+        55.0,
+        60.0
+      ],
+      "admite_ausencia": false
+    },
+    "viga_Y_bloque1_base_cm": {
+      "min": 25.0,
+      "max": 25.0,
+      "valores": [
+        25.0
+      ],
+      "admite_ausencia": false
+    },
+    "viga_Y_bloque1_peralte_cm": {
+      "min": 50.0,
+      "max": 60.0,
+      "valores": [
+        50.0,
+        55.0,
+        60.0
+      ],
+      "admite_ausencia": false
+    },
+    "col_esquina_bloque2_bX_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_esquina_bloque2_bY_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_exterior_bloque2_bX_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_exterior_bloque2_bY_cm": {
+      "min": 30.0,
+      "max": 35.0,
+      "valores": [
+        30.0,
+        35.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_interior_bloque2_bX_cm": {
+      "min": 30.0,
+      "max": 40.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0
+      ],
+      "admite_ausencia": true
+    },
+    "col_interior_bloque2_bY_cm": {
+      "min": 30.0,
+      "max": 40.0,
+      "valores": [
+        30.0,
+        35.0,
+        40.0
+      ],
+      "admite_ausencia": true
+    },
+    "viga_X_bloque2_base_cm": {
+      "min": 25.0,
+      "max": 25.0,
+      "valores": [
+        25.0
+      ],
+      "admite_ausencia": true
+    },
+    "viga_X_bloque2_peralte_cm": {
+      "min": 50.0,
+      "max": 60.0,
+      "valores": [
+        50.0,
+        55.0,
+        60.0
+      ],
+      "admite_ausencia": true
+    },
+    "viga_Y_bloque2_base_cm": {
+      "min": 25.0,
+      "max": 25.0,
+      "valores": [
+        25.0
+      ],
+      "admite_ausencia": true
+    },
+    "viga_Y_bloque2_peralte_cm": {
+      "min": 50.0,
+      "max": 60.0,
+      "valores": [
+        50.0,
+        55.0,
+        60.0
+      ],
+      "admite_ausencia": true
+    },
+    "qv_cubierta_kgf_cm2": {
+      "min": 0.01,
+      "max": 0.01,
+      "valores": [
+        0.01
+      ],
+      "admite_ausencia": false
+    },
+    "luz_X_1_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "luz_X_2_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "luz_X_3_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "luz_X_4_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "luz_X_5_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "luz_Y_1_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "luz_Y_2_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "luz_Y_3_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "luz_Y_4_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "luz_Y_5_cm": {
+      "min": 300.0,
+      "max": 600.0,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso1_peso_sismico_kgf": {
+      "min": 31859.19999999998,
+      "max": 816885.3499999987,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso1_CM_X_cm": {
+      "min": 298.565450833102,
+      "max": 1500.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso1_CM_Y_cm": {
+      "min": 299.9999999999998,
+      "max": 1501.89933648887,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso1_inercia_peso_kgf_cm2": {
+      "min": 2850339593.49648,
+      "max": 1145498589184.37,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso2_peso_sismico_kgf": {
+      "min": 27550.35000000001,
+      "max": 816086.1499999986,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso2_CM_X_cm": {
+      "min": 298.5615347673329,
+      "max": 1500.0,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso2_CM_Y_cm": {
+      "min": 299.9999999999998,
+      "max": 1501.913769344714,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso2_inercia_peso_kgf_cm2": {
+      "min": 2404934814.375,
+      "max": 1144289309646.162,
+      "valores": null,
+      "admite_ausencia": false
+    },
+    "piso3_altura_cm": {
+      "min": 270.0,
+      "max": 330.0,
+      "valores": [
+        270.0,
+        280.0,
+        290.0,
+        300.0,
+        310.0,
+        320.0,
+        330.0
+      ],
+      "admite_ausencia": true
+    },
+    "piso3_peso_sismico_kgf": {
+      "min": 28698.75,
+      "max": 806063.7500000001,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso3_CM_X_cm": {
+      "min": 298.5615347673329,
+      "max": 1499.999999999999,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso3_CM_Y_cm": {
+      "min": 299.9999999999998,
+      "max": 1501.92173289843,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso3_inercia_peso_kgf_cm2": {
+      "min": 2340579468.206223,
+      "max": 1134478614317.693,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso4_altura_cm": {
+      "min": 270.0,
+      "max": 330.0,
+      "valores": [
+        270.0,
+        280.0,
+        290.0,
+        300.0,
+        310.0,
+        320.0,
+        330.0
+      ],
+      "admite_ausencia": true
+    },
+    "piso4_peso_sismico_kgf": {
+      "min": 28694.25000000001,
+      "max": 799502.7250000014,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso4_CM_X_cm": {
+      "min": 298.3908273483005,
+      "max": 1499.999999999995,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso4_CM_Y_cm": {
+      "min": 299.9999999999998,
+      "max": 1502.576544699735,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso4_inercia_peso_kgf_cm2": {
+      "min": 2596006029.375002,
+      "max": 1127975987320.249,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso5_altura_cm": {
+      "min": 270.0,
+      "max": 330.0,
+      "valores": [
+        270.0,
+        280.0,
+        290.0,
+        300.0,
+        310.0,
+        320.0,
+        330.0
+      ],
+      "admite_ausencia": true
+    },
+    "piso5_peso_sismico_kgf": {
+      "min": 27179.09999999999,
+      "max": 545787.3875000009,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso5_CM_X_cm": {
+      "min": 300.0000000000001,
+      "max": 1499.999999999997,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso5_CM_Y_cm": {
+      "min": 300.0,
+      "max": 1498.160877251856,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "piso5_inercia_peso_kgf_cm2": {
+      "min": 2295105943.090285,
+      "max": 792520976104.8115,
+      "valores": null,
+      "admite_ausencia": true
+    },
+    "paño_X1_Y1_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": false
+    },
+    "paño_X1_Y2_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": false
+    },
+    "paño_X1_Y3_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X1_Y4_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X1_Y5_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X2_Y1_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": false
+    },
+    "paño_X2_Y2_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": false
+    },
+    "paño_X2_Y3_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X2_Y4_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X2_Y5_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X3_Y1_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X3_Y2_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X3_Y3_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X3_Y4_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X3_Y5_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X4_Y1_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X4_Y2_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X4_Y3_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X4_Y4_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X4_Y5_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X5_Y1_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X5_Y2_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X5_Y3_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X5_Y4_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    },
+    "paño_X5_Y5_macizo": {
+      "min": 0.0,
+      "max": 1.0,
+      "valores": [
+        0.0,
+        1.0
+      ],
+      "admite_ausencia": true
+    }
+  },
+  "modulo_requerido": "modelos_mejorados.py"
+}

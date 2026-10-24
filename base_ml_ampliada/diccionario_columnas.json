@@ -1,0 +1,2402 @@
+{
+  "ID_estructura": {
+    "descripcion": "Identificador único de fila; no predictor",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "ID_familia": {
+    "descripcion": "Agrupar variantes para dividir entrenamiento y evaluación",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "alternativa": {
+    "descripcion": "alternativa",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "semilla_familia": {
+    "descripcion": "semilla familia",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "pisos": {
+    "descripcion": "pisos",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "vanos_X": {
+    "descripcion": "vanos X",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "vanos_Y": {
+    "descripcion": "vanos Y",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "Lx_cm": {
+    "descripcion": "Lx cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "Ly_cm": {
+    "descripcion": "Ly cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "altura_total_cm": {
+    "descripcion": "altura total cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "fc_kgf_cm2": {
+    "descripcion": "fc kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "fc_alcanza_21MPa": {
+    "descripcion": "fc alcanza 21MPa",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "fy_kgf_cm2": {
+    "descripcion": "fy kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "U": {
+    "descripcion": "U",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "Z": {
+    "descripcion": "Z",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "perfil_suelo": {
+    "descripcion": "perfil suelo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "S": {
+    "descripcion": "S",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "TP_s": {
+    "descripcion": "TP s",
+    "unidad": "s",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "TL_s": {
+    "descripcion": "TL s",
+    "unidad": "s",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "codigo_cargas": {
+    "descripcion": "codigo cargas",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "qv_piso_kgf_cm2": {
+    "descripcion": "qv piso kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "qv_cubierta_kgf_cm2": {
+    "descripcion": "qv cubierta kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "acabados_kgf_cm2": {
+    "descripcion": "acabados kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "tabiques_fijos_kgf_cm2": {
+    "descripcion": "tabiques fijos kgf cm2",
+    "unidad": "kgf/cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "gamma_concreto_kgf_cm3": {
+    "descripcion": "gamma concreto kgf cm3",
+    "unidad": "kgf/cm³",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "t_maciza_cm": {
+    "descripcion": "t maciza cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "t_aligerada_cm": {
+    "descripcion": "t aligerada cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "nervio_ancho_cm": {
+    "descripcion": "nervio ancho cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "nervio_separacion_cm": {
+    "descripcion": "nervio separacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "capa_compresion_cm": {
+    "descripcion": "capa compresion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso_inicio_bloque2": {
+    "descripcion": "piso inicio bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "cantidad_bloques": {
+    "descripcion": "cantidad bloques",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "ratio_columna_muestreado": {
+    "descripcion": "ratio columna muestreado",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "peso_gravitacional_kgf": {
+    "descripcion": "D+L completo, incluye peso directamente soportado por base",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "peso_sismico_kgf": {
+    "descripcion": "Peso efectivo de niveles libres, D+fracción de L",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "fraccion_area_maciza": {
+    "descripcion": "fraccion area maciza",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "Tx_s": {
+    "descripcion": "Período del modo con mayor masa efectiva nominal en X",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "Ty_s": {
+    "descripcion": "Período del modo con mayor masa efectiva nominal en Y",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "T_estatico_s": {
+    "descripcion": "T estatico s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "R_asumido": {
+    "descripcion": "R=8 bajo hipótesis de ductilidad y regularidad; resistencia no verificada",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "regularidad_evaluable": {
+    "descripcion": "Cumple criterios geométricos, masa, rigidez y torsión evaluados",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "regularidad_resistencia_verificada": {
+    "descripcion": "regularidad resistencia verificada",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "resistencia_elementos_verificada": {
+    "descripcion": "resistencia elementos verificada",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "diafragma_rigido_asumido": {
+    "descripcion": "diafragma rigido asumido",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "resistencia_diafragma_verificada": {
+    "descripcion": "resistencia diafragma verificada",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "segundo_orden_incluido": {
+    "descripcion": "segundo orden incluido",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "normativa": {
+    "descripcion": "normativa",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "criterio_columnas": {
+    "descripcion": "criterio columnas",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "criterio_vigas": {
+    "descripcion": "criterio vigas",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "criterio_losas": {
+    "descripcion": "criterio losas",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "flecha_largo_plazo_verificada": {
+    "descripcion": "flecha largo plazo verificada",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "divisiones_desacopladas_flecha_asumidas": {
+    "descripcion": "divisiones desacopladas flecha asumidas",
+    "unidad": "adimensional / categoría",
+    "rol": "metadato_no_predictor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "distribucion_carga_vigas": {
+    "descripcion": "distribucion carga vigas",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modelo_rigidez": {
+    "descripcion": "modelo rigidez",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "error_equilibrio_relativo": {
+    "descripcion": "error equilibrio relativo",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "error_reciprocidad": {
+    "descripcion": "error reciprocidad",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "error_modal_relativo": {
+    "descripcion": "error modal relativo",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "iteraciones_predimensionamiento": {
+    "descripcion": "iteraciones predimensionamiento",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_media_X_cm": {
+    "descripcion": "luz media X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_min_X_cm": {
+    "descripcion": "luz min X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_max_X_cm": {
+    "descripcion": "luz max X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "CV_luces_X": {
+    "descripcion": "CV luces X",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_X_1_cm": {
+    "descripcion": "luz X 1 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_X_2_cm": {
+    "descripcion": "luz X 2 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_X_3_cm": {
+    "descripcion": "luz X 3 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_X_4_cm": {
+    "descripcion": "luz X 4 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_X_5_cm": {
+    "descripcion": "luz X 5 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_media_Y_cm": {
+    "descripcion": "luz media Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_min_Y_cm": {
+    "descripcion": "luz min Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_max_Y_cm": {
+    "descripcion": "luz max Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "CV_luces_Y": {
+    "descripcion": "CV luces Y",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_Y_1_cm": {
+    "descripcion": "luz Y 1 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_Y_2_cm": {
+    "descripcion": "luz Y 2 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_Y_3_cm": {
+    "descripcion": "luz Y 3 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_Y_4_cm": {
+    "descripcion": "luz Y 4 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "luz_Y_5_cm": {
+    "descripcion": "luz Y 5 cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque1_bX_cm": {
+    "descripcion": "col esquina bloque1 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque1_bY_cm": {
+    "descripcion": "col esquina bloque1 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque1_area_requerida_cm2": {
+    "descripcion": "col esquina bloque1 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque1_bX_cm": {
+    "descripcion": "col exterior bloque1 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque1_bY_cm": {
+    "descripcion": "col exterior bloque1 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque1_area_requerida_cm2": {
+    "descripcion": "col exterior bloque1 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque1_bX_cm": {
+    "descripcion": "col interior bloque1 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque1_bY_cm": {
+    "descripcion": "col interior bloque1 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque1_area_requerida_cm2": {
+    "descripcion": "col interior bloque1 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_X_bloque1_base_cm": {
+    "descripcion": "viga X bloque1 base cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_X_bloque1_peralte_cm": {
+    "descripcion": "viga X bloque1 peralte cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_Y_bloque1_base_cm": {
+    "descripcion": "viga Y bloque1 base cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_Y_bloque1_peralte_cm": {
+    "descripcion": "viga Y bloque1 peralte cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque2_bX_cm": {
+    "descripcion": "col esquina bloque2 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque2_bY_cm": {
+    "descripcion": "col esquina bloque2 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_esquina_bloque2_area_requerida_cm2": {
+    "descripcion": "col esquina bloque2 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque2_bX_cm": {
+    "descripcion": "col exterior bloque2 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque2_bY_cm": {
+    "descripcion": "col exterior bloque2 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_exterior_bloque2_area_requerida_cm2": {
+    "descripcion": "col exterior bloque2 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque2_bX_cm": {
+    "descripcion": "col interior bloque2 bX cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque2_bY_cm": {
+    "descripcion": "col interior bloque2 bY cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "col_interior_bloque2_area_requerida_cm2": {
+    "descripcion": "col interior bloque2 area requerida cm2",
+    "unidad": "cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_X_bloque2_base_cm": {
+    "descripcion": "viga X bloque2 base cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_X_bloque2_peralte_cm": {
+    "descripcion": "viga X bloque2 peralte cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_Y_bloque2_base_cm": {
+    "descripcion": "viga Y bloque2 base cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "viga_Y_bloque2_peralte_cm": {
+    "descripcion": "viga Y bloque2 peralte cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y1_macizo": {
+    "descripcion": "paño X1 Y1 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y1_direccion_corta_bloque1": {
+    "descripcion": "paño X1 Y1 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y1_direccion_corta_bloque2": {
+    "descripcion": "paño X1 Y1 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y2_macizo": {
+    "descripcion": "paño X1 Y2 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y2_direccion_corta_bloque1": {
+    "descripcion": "paño X1 Y2 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y2_direccion_corta_bloque2": {
+    "descripcion": "paño X1 Y2 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y3_macizo": {
+    "descripcion": "paño X1 Y3 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y3_direccion_corta_bloque1": {
+    "descripcion": "paño X1 Y3 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y3_direccion_corta_bloque2": {
+    "descripcion": "paño X1 Y3 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y4_macizo": {
+    "descripcion": "paño X1 Y4 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y4_direccion_corta_bloque1": {
+    "descripcion": "paño X1 Y4 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y4_direccion_corta_bloque2": {
+    "descripcion": "paño X1 Y4 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y5_macizo": {
+    "descripcion": "paño X1 Y5 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y5_direccion_corta_bloque1": {
+    "descripcion": "paño X1 Y5 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X1_Y5_direccion_corta_bloque2": {
+    "descripcion": "paño X1 Y5 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y1_macizo": {
+    "descripcion": "paño X2 Y1 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y1_direccion_corta_bloque1": {
+    "descripcion": "paño X2 Y1 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y1_direccion_corta_bloque2": {
+    "descripcion": "paño X2 Y1 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y2_macizo": {
+    "descripcion": "paño X2 Y2 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y2_direccion_corta_bloque1": {
+    "descripcion": "paño X2 Y2 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y2_direccion_corta_bloque2": {
+    "descripcion": "paño X2 Y2 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y3_macizo": {
+    "descripcion": "paño X2 Y3 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y3_direccion_corta_bloque1": {
+    "descripcion": "paño X2 Y3 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y3_direccion_corta_bloque2": {
+    "descripcion": "paño X2 Y3 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y4_macizo": {
+    "descripcion": "paño X2 Y4 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y4_direccion_corta_bloque1": {
+    "descripcion": "paño X2 Y4 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y4_direccion_corta_bloque2": {
+    "descripcion": "paño X2 Y4 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y5_macizo": {
+    "descripcion": "paño X2 Y5 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y5_direccion_corta_bloque1": {
+    "descripcion": "paño X2 Y5 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X2_Y5_direccion_corta_bloque2": {
+    "descripcion": "paño X2 Y5 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y1_macizo": {
+    "descripcion": "paño X3 Y1 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y1_direccion_corta_bloque1": {
+    "descripcion": "paño X3 Y1 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y1_direccion_corta_bloque2": {
+    "descripcion": "paño X3 Y1 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y2_macizo": {
+    "descripcion": "paño X3 Y2 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y2_direccion_corta_bloque1": {
+    "descripcion": "paño X3 Y2 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y2_direccion_corta_bloque2": {
+    "descripcion": "paño X3 Y2 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y3_macizo": {
+    "descripcion": "paño X3 Y3 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y3_direccion_corta_bloque1": {
+    "descripcion": "paño X3 Y3 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y3_direccion_corta_bloque2": {
+    "descripcion": "paño X3 Y3 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y4_macizo": {
+    "descripcion": "paño X3 Y4 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y4_direccion_corta_bloque1": {
+    "descripcion": "paño X3 Y4 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y4_direccion_corta_bloque2": {
+    "descripcion": "paño X3 Y4 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y5_macizo": {
+    "descripcion": "paño X3 Y5 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y5_direccion_corta_bloque1": {
+    "descripcion": "paño X3 Y5 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X3_Y5_direccion_corta_bloque2": {
+    "descripcion": "paño X3 Y5 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y1_macizo": {
+    "descripcion": "paño X4 Y1 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y1_direccion_corta_bloque1": {
+    "descripcion": "paño X4 Y1 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y1_direccion_corta_bloque2": {
+    "descripcion": "paño X4 Y1 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y2_macizo": {
+    "descripcion": "paño X4 Y2 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y2_direccion_corta_bloque1": {
+    "descripcion": "paño X4 Y2 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y2_direccion_corta_bloque2": {
+    "descripcion": "paño X4 Y2 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y3_macizo": {
+    "descripcion": "paño X4 Y3 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y3_direccion_corta_bloque1": {
+    "descripcion": "paño X4 Y3 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y3_direccion_corta_bloque2": {
+    "descripcion": "paño X4 Y3 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y4_macizo": {
+    "descripcion": "paño X4 Y4 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y4_direccion_corta_bloque1": {
+    "descripcion": "paño X4 Y4 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y4_direccion_corta_bloque2": {
+    "descripcion": "paño X4 Y4 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y5_macizo": {
+    "descripcion": "paño X4 Y5 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y5_direccion_corta_bloque1": {
+    "descripcion": "paño X4 Y5 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X4_Y5_direccion_corta_bloque2": {
+    "descripcion": "paño X4 Y5 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y1_macizo": {
+    "descripcion": "paño X5 Y1 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y1_direccion_corta_bloque1": {
+    "descripcion": "paño X5 Y1 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y1_direccion_corta_bloque2": {
+    "descripcion": "paño X5 Y1 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y2_macizo": {
+    "descripcion": "paño X5 Y2 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y2_direccion_corta_bloque1": {
+    "descripcion": "paño X5 Y2 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y2_direccion_corta_bloque2": {
+    "descripcion": "paño X5 Y2 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y3_macizo": {
+    "descripcion": "paño X5 Y3 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y3_direccion_corta_bloque1": {
+    "descripcion": "paño X5 Y3 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y3_direccion_corta_bloque2": {
+    "descripcion": "paño X5 Y3 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y4_macizo": {
+    "descripcion": "paño X5 Y4 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y4_direccion_corta_bloque1": {
+    "descripcion": "paño X5 Y4 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y4_direccion_corta_bloque2": {
+    "descripcion": "paño X5 Y4 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y5_macizo": {
+    "descripcion": "paño X5 Y5 macizo",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y5_direccion_corta_bloque1": {
+    "descripcion": "paño X5 Y5 direccion corta bloque1",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "paño_X5_Y5_direccion_corta_bloque2": {
+    "descripcion": "paño X5 Y5 direccion corta bloque2",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_estatico_X_kgf": {
+    "descripcion": "V estatico X kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_modal_X_kgf": {
+    "descripcion": "V modal X kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "factor_escala_fuerzas_X": {
+    "descripcion": "factor escala fuerzas X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_modal_ajustado_X_kgf": {
+    "descripcion": "V modal ajustado X kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_combinado_X_kgf": {
+    "descripcion": "V combinado X kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "desplazamiento_techo_CM_X_cm": {
+    "descripcion": "desplazamiento techo CM X cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "desplazamiento_techo_max_X_cm": {
+    "descripcion": "desplazamiento techo max X cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "deriva_max_X": {
+    "descripcion": "deriva max X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso_deriva_max_X": {
+    "descripcion": "piso deriva max X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "esquina_deriva_max_X": {
+    "descripcion": "esquina deriva max X",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "cumple_deriva_X": {
+    "descripcion": "cumple deriva X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "razon_torsion_X": {
+    "descripcion": "razon torsion X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "indicador_PDelta_X": {
+    "descripcion": "indicador PDelta X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "masa_modal_acumulada_X": {
+    "descripcion": "masa modal acumulada X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_estatico_Y_kgf": {
+    "descripcion": "V estatico Y kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_modal_Y_kgf": {
+    "descripcion": "V modal Y kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "factor_escala_fuerzas_Y": {
+    "descripcion": "factor escala fuerzas Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_modal_ajustado_Y_kgf": {
+    "descripcion": "V modal ajustado Y kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "V_combinado_Y_kgf": {
+    "descripcion": "V combinado Y kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "desplazamiento_techo_CM_Y_cm": {
+    "descripcion": "desplazamiento techo CM Y cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "desplazamiento_techo_max_Y_cm": {
+    "descripcion": "desplazamiento techo max Y cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "deriva_max_Y": {
+    "descripcion": "deriva max Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso_deriva_max_Y": {
+    "descripcion": "piso deriva max Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "esquina_deriva_max_Y": {
+    "descripcion": "esquina deriva max Y",
+    "unidad": "adimensional / categoría",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "cumple_deriva_Y": {
+    "descripcion": "cumple deriva Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "razon_torsion_Y": {
+    "descripcion": "razon torsion Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "indicador_PDelta_Y": {
+    "descripcion": "indicador PDelta Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "masa_modal_acumulada_Y": {
+    "descripcion": "masa modal acumulada Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_altura_cm": {
+    "descripcion": "piso1 altura cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_elevacion_cm": {
+    "descripcion": "piso1 elevacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_peso_muerto_kgf": {
+    "descripcion": "piso1 peso muerto kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_peso_vivo_kgf": {
+    "descripcion": "piso1 peso vivo kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_peso_sismico_kgf": {
+    "descripcion": "piso1 peso sismico kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_CM_X_cm": {
+    "descripcion": "piso1 CM X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_CM_Y_cm": {
+    "descripcion": "piso1 CM Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_inercia_peso_kgf_cm2": {
+    "descripcion": "piso1 inercia peso kgf cm2",
+    "unidad": "kgf·cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_u_elastica_CM_cm": {
+    "descripcion": "piso1 X u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_u_normativa_CM_cm": {
+    "descripcion": "piso1 X u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_elastica_CM": {
+    "descripcion": "piso1 X deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_normativa_CM": {
+    "descripcion": "piso1 X deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_rigidez_kgf_cm": {
+    "descripcion": "piso1 X rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_max": {
+    "descripcion": "piso1 X deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_cortante_combinado_kgf": {
+    "descripcion": "piso1 X cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_esquina1": {
+    "descripcion": "piso1 X deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_esquina2": {
+    "descripcion": "piso1 X deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_esquina3": {
+    "descripcion": "piso1 X deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_X_deriva_esquina4": {
+    "descripcion": "piso1 X deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_u_elastica_CM_cm": {
+    "descripcion": "piso1 Y u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_u_normativa_CM_cm": {
+    "descripcion": "piso1 Y u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_elastica_CM": {
+    "descripcion": "piso1 Y deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_normativa_CM": {
+    "descripcion": "piso1 Y deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_rigidez_kgf_cm": {
+    "descripcion": "piso1 Y rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_max": {
+    "descripcion": "piso1 Y deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_cortante_combinado_kgf": {
+    "descripcion": "piso1 Y cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_esquina1": {
+    "descripcion": "piso1 Y deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_esquina2": {
+    "descripcion": "piso1 Y deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_esquina3": {
+    "descripcion": "piso1 Y deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso1_Y_deriva_esquina4": {
+    "descripcion": "piso1 Y deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_altura_cm": {
+    "descripcion": "piso2 altura cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_elevacion_cm": {
+    "descripcion": "piso2 elevacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_peso_muerto_kgf": {
+    "descripcion": "piso2 peso muerto kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_peso_vivo_kgf": {
+    "descripcion": "piso2 peso vivo kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_peso_sismico_kgf": {
+    "descripcion": "piso2 peso sismico kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_CM_X_cm": {
+    "descripcion": "piso2 CM X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_CM_Y_cm": {
+    "descripcion": "piso2 CM Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_inercia_peso_kgf_cm2": {
+    "descripcion": "piso2 inercia peso kgf cm2",
+    "unidad": "kgf·cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_u_elastica_CM_cm": {
+    "descripcion": "piso2 X u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_u_normativa_CM_cm": {
+    "descripcion": "piso2 X u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_elastica_CM": {
+    "descripcion": "piso2 X deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_normativa_CM": {
+    "descripcion": "piso2 X deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_rigidez_kgf_cm": {
+    "descripcion": "piso2 X rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_max": {
+    "descripcion": "piso2 X deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_cortante_combinado_kgf": {
+    "descripcion": "piso2 X cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_esquina1": {
+    "descripcion": "piso2 X deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_esquina2": {
+    "descripcion": "piso2 X deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_esquina3": {
+    "descripcion": "piso2 X deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_X_deriva_esquina4": {
+    "descripcion": "piso2 X deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_u_elastica_CM_cm": {
+    "descripcion": "piso2 Y u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_u_normativa_CM_cm": {
+    "descripcion": "piso2 Y u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_elastica_CM": {
+    "descripcion": "piso2 Y deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_normativa_CM": {
+    "descripcion": "piso2 Y deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_rigidez_kgf_cm": {
+    "descripcion": "piso2 Y rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_max": {
+    "descripcion": "piso2 Y deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_cortante_combinado_kgf": {
+    "descripcion": "piso2 Y cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_esquina1": {
+    "descripcion": "piso2 Y deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_esquina2": {
+    "descripcion": "piso2 Y deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_esquina3": {
+    "descripcion": "piso2 Y deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso2_Y_deriva_esquina4": {
+    "descripcion": "piso2 Y deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_altura_cm": {
+    "descripcion": "piso3 altura cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_elevacion_cm": {
+    "descripcion": "piso3 elevacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_peso_muerto_kgf": {
+    "descripcion": "piso3 peso muerto kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_peso_vivo_kgf": {
+    "descripcion": "piso3 peso vivo kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_peso_sismico_kgf": {
+    "descripcion": "piso3 peso sismico kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_CM_X_cm": {
+    "descripcion": "piso3 CM X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_CM_Y_cm": {
+    "descripcion": "piso3 CM Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_inercia_peso_kgf_cm2": {
+    "descripcion": "piso3 inercia peso kgf cm2",
+    "unidad": "kgf·cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_u_elastica_CM_cm": {
+    "descripcion": "piso3 X u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_u_normativa_CM_cm": {
+    "descripcion": "piso3 X u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_elastica_CM": {
+    "descripcion": "piso3 X deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_normativa_CM": {
+    "descripcion": "piso3 X deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_rigidez_kgf_cm": {
+    "descripcion": "piso3 X rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_max": {
+    "descripcion": "piso3 X deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_cortante_combinado_kgf": {
+    "descripcion": "piso3 X cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_esquina1": {
+    "descripcion": "piso3 X deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_esquina2": {
+    "descripcion": "piso3 X deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_esquina3": {
+    "descripcion": "piso3 X deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_X_deriva_esquina4": {
+    "descripcion": "piso3 X deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_u_elastica_CM_cm": {
+    "descripcion": "piso3 Y u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_u_normativa_CM_cm": {
+    "descripcion": "piso3 Y u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_elastica_CM": {
+    "descripcion": "piso3 Y deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_normativa_CM": {
+    "descripcion": "piso3 Y deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_rigidez_kgf_cm": {
+    "descripcion": "piso3 Y rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_max": {
+    "descripcion": "piso3 Y deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_cortante_combinado_kgf": {
+    "descripcion": "piso3 Y cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_esquina1": {
+    "descripcion": "piso3 Y deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_esquina2": {
+    "descripcion": "piso3 Y deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_esquina3": {
+    "descripcion": "piso3 Y deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso3_Y_deriva_esquina4": {
+    "descripcion": "piso3 Y deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_altura_cm": {
+    "descripcion": "piso4 altura cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_elevacion_cm": {
+    "descripcion": "piso4 elevacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_peso_muerto_kgf": {
+    "descripcion": "piso4 peso muerto kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_peso_vivo_kgf": {
+    "descripcion": "piso4 peso vivo kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_peso_sismico_kgf": {
+    "descripcion": "piso4 peso sismico kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_CM_X_cm": {
+    "descripcion": "piso4 CM X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_CM_Y_cm": {
+    "descripcion": "piso4 CM Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_inercia_peso_kgf_cm2": {
+    "descripcion": "piso4 inercia peso kgf cm2",
+    "unidad": "kgf·cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_u_elastica_CM_cm": {
+    "descripcion": "piso4 X u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_u_normativa_CM_cm": {
+    "descripcion": "piso4 X u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_elastica_CM": {
+    "descripcion": "piso4 X deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_normativa_CM": {
+    "descripcion": "piso4 X deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_rigidez_kgf_cm": {
+    "descripcion": "piso4 X rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_max": {
+    "descripcion": "piso4 X deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_cortante_combinado_kgf": {
+    "descripcion": "piso4 X cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_esquina1": {
+    "descripcion": "piso4 X deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_esquina2": {
+    "descripcion": "piso4 X deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_esquina3": {
+    "descripcion": "piso4 X deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_X_deriva_esquina4": {
+    "descripcion": "piso4 X deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_u_elastica_CM_cm": {
+    "descripcion": "piso4 Y u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_u_normativa_CM_cm": {
+    "descripcion": "piso4 Y u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_elastica_CM": {
+    "descripcion": "piso4 Y deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_normativa_CM": {
+    "descripcion": "piso4 Y deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_rigidez_kgf_cm": {
+    "descripcion": "piso4 Y rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_max": {
+    "descripcion": "piso4 Y deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_cortante_combinado_kgf": {
+    "descripcion": "piso4 Y cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_esquina1": {
+    "descripcion": "piso4 Y deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_esquina2": {
+    "descripcion": "piso4 Y deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_esquina3": {
+    "descripcion": "piso4 Y deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso4_Y_deriva_esquina4": {
+    "descripcion": "piso4 Y deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_altura_cm": {
+    "descripcion": "piso5 altura cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_elevacion_cm": {
+    "descripcion": "piso5 elevacion cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_peso_muerto_kgf": {
+    "descripcion": "piso5 peso muerto kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_peso_vivo_kgf": {
+    "descripcion": "piso5 peso vivo kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_peso_sismico_kgf": {
+    "descripcion": "piso5 peso sismico kgf",
+    "unidad": "kgf",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_CM_X_cm": {
+    "descripcion": "piso5 CM X cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_CM_Y_cm": {
+    "descripcion": "piso5 CM Y cm",
+    "unidad": "cm",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_inercia_peso_kgf_cm2": {
+    "descripcion": "piso5 inercia peso kgf cm2",
+    "unidad": "kgf·cm²",
+    "rol": "entrada_o_descriptor",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_u_elastica_CM_cm": {
+    "descripcion": "piso5 X u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_u_normativa_CM_cm": {
+    "descripcion": "piso5 X u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_elastica_CM": {
+    "descripcion": "piso5 X deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_normativa_CM": {
+    "descripcion": "piso5 X deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_rigidez_kgf_cm": {
+    "descripcion": "piso5 X rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_max": {
+    "descripcion": "piso5 X deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_cortante_combinado_kgf": {
+    "descripcion": "piso5 X cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_esquina1": {
+    "descripcion": "piso5 X deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_esquina2": {
+    "descripcion": "piso5 X deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_esquina3": {
+    "descripcion": "piso5 X deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_X_deriva_esquina4": {
+    "descripcion": "piso5 X deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_u_elastica_CM_cm": {
+    "descripcion": "piso5 Y u elastica CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_u_normativa_CM_cm": {
+    "descripcion": "piso5 Y u normativa CM cm",
+    "unidad": "cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_elastica_CM": {
+    "descripcion": "piso5 Y deriva elastica CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_normativa_CM": {
+    "descripcion": "piso5 Y deriva normativa CM",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_rigidez_kgf_cm": {
+    "descripcion": "piso5 Y rigidez kgf cm",
+    "unidad": "kgf/cm",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_max": {
+    "descripcion": "piso5 Y deriva max",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_cortante_combinado_kgf": {
+    "descripcion": "piso5 Y cortante combinado kgf",
+    "unidad": "kgf",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_esquina1": {
+    "descripcion": "piso5 Y deriva esquina1",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_esquina2": {
+    "descripcion": "piso5 Y deriva esquina2",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_esquina3": {
+    "descripcion": "piso5 Y deriva esquina3",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "piso5_Y_deriva_esquina4": {
+    "descripcion": "piso5 Y deriva esquina4",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo1_T_s": {
+    "descripcion": "modo1 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo1_masa_X": {
+    "descripcion": "modo1 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo1_masa_Y": {
+    "descripcion": "modo1 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo2_T_s": {
+    "descripcion": "modo2 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo2_masa_X": {
+    "descripcion": "modo2 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo2_masa_Y": {
+    "descripcion": "modo2 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo3_T_s": {
+    "descripcion": "modo3 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo3_masa_X": {
+    "descripcion": "modo3 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo3_masa_Y": {
+    "descripcion": "modo3 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo4_T_s": {
+    "descripcion": "modo4 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo4_masa_X": {
+    "descripcion": "modo4 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo4_masa_Y": {
+    "descripcion": "modo4 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo5_T_s": {
+    "descripcion": "modo5 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo5_masa_X": {
+    "descripcion": "modo5 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo5_masa_Y": {
+    "descripcion": "modo5 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo6_T_s": {
+    "descripcion": "modo6 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo6_masa_X": {
+    "descripcion": "modo6 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo6_masa_Y": {
+    "descripcion": "modo6 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo7_T_s": {
+    "descripcion": "modo7 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo7_masa_X": {
+    "descripcion": "modo7 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo7_masa_Y": {
+    "descripcion": "modo7 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo8_T_s": {
+    "descripcion": "modo8 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo8_masa_X": {
+    "descripcion": "modo8 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo8_masa_Y": {
+    "descripcion": "modo8 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo9_T_s": {
+    "descripcion": "modo9 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo9_masa_X": {
+    "descripcion": "modo9 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo9_masa_Y": {
+    "descripcion": "modo9 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo10_T_s": {
+    "descripcion": "modo10 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo10_masa_X": {
+    "descripcion": "modo10 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo10_masa_Y": {
+    "descripcion": "modo10 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo11_T_s": {
+    "descripcion": "modo11 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo11_masa_X": {
+    "descripcion": "modo11 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo11_masa_Y": {
+    "descripcion": "modo11 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo12_T_s": {
+    "descripcion": "modo12 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo12_masa_X": {
+    "descripcion": "modo12 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo12_masa_Y": {
+    "descripcion": "modo12 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo13_T_s": {
+    "descripcion": "modo13 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo13_masa_X": {
+    "descripcion": "modo13 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo13_masa_Y": {
+    "descripcion": "modo13 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo14_T_s": {
+    "descripcion": "modo14 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo14_masa_X": {
+    "descripcion": "modo14 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo14_masa_Y": {
+    "descripcion": "modo14 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo15_T_s": {
+    "descripcion": "modo15 T s",
+    "unidad": "s",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo15_masa_X": {
+    "descripcion": "modo15 masa X",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  },
+  "modo15_masa_Y": {
+    "descripcion": "modo15 masa Y",
+    "unidad": "adimensional / categoría",
+    "rol": "resultado",
+    "ausente": "celda vacía: no aplicable"
+  }
+}

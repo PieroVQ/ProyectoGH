@@ -1,0 +1,5 @@
+# Conservar los bytes del código y resultados originales también al clonar.
+* -text
+*.xlsx binary
+*.joblib binary
+*.npz binary

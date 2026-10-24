@@ -1,0 +1,91 @@
+{
+  "modelos_por_objetivo": {
+    "Tx_s": [
+      "Boosting_15"
+    ],
+    "Ty_s": [
+      "Boosting_15"
+    ],
+    "V_modal_ajustado_X_kgf": [
+      "Boosting_31"
+    ],
+    "V_modal_ajustado_Y_kgf": [
+      "Boosting_31",
+      "Boosting_15"
+    ],
+    "desplazamiento_techo_max_X_cm": [
+      "Boosting_15"
+    ],
+    "desplazamiento_techo_max_Y_cm": [
+      "Boosting_15"
+    ],
+    "deriva_max_X": [
+      "Boosting_15"
+    ],
+    "deriva_max_Y": [
+      "Boosting_15"
+    ]
+  },
+  "criterio": "Menor RMSE en predicciones fuera de muestra de 3 folds por familia. Promedios de los 2/3 mejores sólo si reducen ese error. La selección por respuesta minimiza también el promedio NRMSE + 0.25 peor NRMSE.",
+  "configuraciones": {
+    "RF_original": {
+      "tipo": "rf",
+      "fisica": false,
+      "normalizar": false,
+      "arboles": 200,
+      "hoja": 2,
+      "fraccion": 0.8
+    },
+    "RF_fisica": {
+      "tipo": "rf",
+      "fisica": true,
+      "normalizar": false,
+      "arboles": 250,
+      "hoja": 1,
+      "fraccion": 1.0
+    },
+    "RF_normalizado": {
+      "tipo": "rf",
+      "fisica": true,
+      "normalizar": true,
+      "arboles": 250,
+      "hoja": 1,
+      "fraccion": 0.8
+    },
+    "ExtraTrees_1": {
+      "tipo": "et",
+      "fisica": true,
+      "normalizar": true,
+      "arboles": 300,
+      "hoja": 1,
+      "fraccion": 1.0
+    },
+    "ExtraTrees_2": {
+      "tipo": "et",
+      "fisica": true,
+      "normalizar": true,
+      "arboles": 300,
+      "hoja": 2,
+      "fraccion": 0.8
+    },
+    "Boosting_15": {
+      "tipo": "hgb",
+      "fisica": true,
+      "normalizar": true,
+      "iteraciones": 350,
+      "hoja": 10,
+      "nodos": 15,
+      "lr": 0.06
+    },
+    "Boosting_31": {
+      "tipo": "hgb",
+      "fisica": true,
+      "normalizar": true,
+      "iteraciones": 450,
+      "hoja": 15,
+      "nodos": 31,
+      "lr": 0.05
+    }
+  },
+  "semilla": 48371
+}

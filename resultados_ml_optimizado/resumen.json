@@ -1,0 +1,25 @@
+{
+  "filas": 1500,
+  "familias": 1500,
+  "filas_entrenamiento": 1200,
+  "filas_prueba": 300,
+  "familias_prueba": 300,
+  "semilla": 48371,
+  "excel_sha256": "7aa633a743e11e51e94d38b8f09939ba2c1b36e4e9e7ace0cd4f2ee81b2e8a9b",
+  "versiones": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "joblib": "1.6.0"
+  },
+  "fc_entrenamiento": [
+    210.0,
+    280.0
+  ],
+  "fc_prueba": [
+    210.0,
+    280.0
+  ],
+  "segundos": 316.89100000000326,
+  "nota": "Selección por CV exclusivamente. Prueba final usada una sola vez para comparar. Modelo final reajustado con toda la base. Mejor entre opciones ensayadas, no garantía de óptimo universal."
+}

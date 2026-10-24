@@ -1,0 +1,529 @@
+<!doctype html><html lang="es"><meta charset="utf-8">
+<title>Estructura 1: comparación ML</title>
+<style>body{font:16px Arial;max-width:1200px;margin:36px auto;padding:0 20px;color:#173042}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{border:1px solid #dce2e7;padding:10px;text-align:left}th{background:#e8eff5}.aviso{background:#fff1c9;padding:16px;line-height:1.5}h1,h2{color:#17365d}</style>
+<h1>Estructura 1</h1>
+<p>Familia: 2 · Conjunto: prueba</p>
+<p class="aviso">Este caso quedó reservado para prueba: el modelo de evaluación no utilizó su familia para aprender.</p>
+<h2>Predicciones frente al análisis estructural</h2>
+<p>OpenSees es la referencia calculada; no son mediciones de un edificio real. Se usa modelo_evaluacion.joblib, no el modelo final reajustado con toda la base.</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Resultado</th>
+      <th>Unidad</th>
+      <th>OpenSees</th>
+      <th>Predicción ML</th>
+      <th>Error absoluto</th>
+      <th>Error relativo (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Período X</td>
+      <td>s</td>
+      <td>0.703898</td>
+      <td>0.715259</td>
+      <td>0.0113612</td>
+      <td>1.61404</td>
+    </tr>
+    <tr>
+      <td>Período Y</td>
+      <td>s</td>
+      <td>0.724919</td>
+      <td>0.738992</td>
+      <td>0.0140727</td>
+      <td>1.94128</td>
+    </tr>
+    <tr>
+      <td>Cortante basal X</td>
+      <td>kgf</td>
+      <td>76064.3</td>
+      <td>76064.3</td>
+      <td>1.45519e-11</td>
+      <td>1.91311e-14</td>
+    </tr>
+    <tr>
+      <td>Cortante basal Y</td>
+      <td>kgf</td>
+      <td>76064.3</td>
+      <td>76074.6</td>
+      <td>10.2848</td>
+      <td>0.0135212</td>
+    </tr>
+    <tr>
+      <td>Desplazamiento máximo de techo X</td>
+      <td>cm</td>
+      <td>8.78951</td>
+      <td>8.98635</td>
+      <td>0.196845</td>
+      <td>2.23954</td>
+    </tr>
+    <tr>
+      <td>Desplazamiento máximo de techo Y</td>
+      <td>cm</td>
+      <td>11.1948</td>
+      <td>11.1117</td>
+      <td>0.0830585</td>
+      <td>0.741941</td>
+    </tr>
+    <tr>
+      <td>Deriva máxima X</td>
+      <td>adimensional</td>
+      <td>0.0111797</td>
+      <td>0.0120131</td>
+      <td>0.000833441</td>
+      <td>7.45495</td>
+    </tr>
+    <tr>
+      <td>Deriva máxima Y</td>
+      <td>adimensional</td>
+      <td>0.0139983</td>
+      <td>0.0151657</td>
+      <td>0.00116745</td>
+      <td>8.33996</td>
+    </tr>
+  </tbody>
+</table>
+<p>Error absoluto = diferencia entre predicción y referencia, sin signo. Error relativo = error absoluto / magnitud de la referencia × 100. No se calcula R² para una sola estructura.</p>
+<h2>Datos que entraron al modelo</h2>
+<p>Longitudes en cm; resistencia en kgf/cm²; peso en kgf; cargas superficiales en kgf/cm²; tiempos en s. Los vanos mantienen su orden. Los vacíos representan elementos inexistentes; el tratamiento de ausencias está guardado dentro del modelo.</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Variable</th>
+      <th>Valor de entrada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fc_kgf_cm2</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>fy_kgf_cm2</td>
+      <td>4200</td>
+    </tr>
+    <tr>
+      <td>pisos</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>vanos_X</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>vanos_Y</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Lx_cm</td>
+      <td>2750</td>
+    </tr>
+    <tr>
+      <td>Ly_cm</td>
+      <td>1410</td>
+    </tr>
+    <tr>
+      <td>altura_total_cm</td>
+      <td>960</td>
+    </tr>
+    <tr>
+      <td>piso1_altura_cm</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>piso2_altura_cm</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>luz_media_X_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_media_Y_cm</td>
+      <td>470</td>
+    </tr>
+    <tr>
+      <td>CV_luces_X</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CV_luces_Y</td>
+      <td>0.0626366</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>TP_s</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>TL_s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>qv_piso_kgf_cm2</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>acabados_kgf_cm2</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>tabiques_fijos_kgf_cm2</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>peso_sismico_kgf</td>
+      <td>936177</td>
+    </tr>
+    <tr>
+      <td>t_maciza_cm</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>t_aligerada_cm</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>fraccion_area_maciza</td>
+      <td>0.142326</td>
+    </tr>
+    <tr>
+      <td>cantidad_bloques</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>piso_inicio_bloque2</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_esquina_bloque1_bX_cm</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>col_esquina_bloque1_bY_cm</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>col_exterior_bloque1_bX_cm</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>col_exterior_bloque1_bY_cm</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>col_interior_bloque1_bX_cm</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>col_interior_bloque1_bY_cm</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>viga_X_bloque1_base_cm</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>viga_X_bloque1_peralte_cm</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>viga_Y_bloque1_base_cm</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>viga_Y_bloque1_peralte_cm</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>col_esquina_bloque2_bX_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_esquina_bloque2_bY_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_exterior_bloque2_bX_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_exterior_bloque2_bY_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_interior_bloque2_bX_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>col_interior_bloque2_bY_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>viga_X_bloque2_base_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>viga_X_bloque2_peralte_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>viga_Y_bloque2_base_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>viga_Y_bloque2_peralte_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>qv_cubierta_kgf_cm2</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>luz_X_1_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_X_2_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_X_3_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_X_4_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_X_5_cm</td>
+      <td>550</td>
+    </tr>
+    <tr>
+      <td>luz_Y_1_cm</td>
+      <td>430</td>
+    </tr>
+    <tr>
+      <td>luz_Y_2_cm</td>
+      <td>480</td>
+    </tr>
+    <tr>
+      <td>luz_Y_3_cm</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>luz_Y_4_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>luz_Y_5_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso1_peso_sismico_kgf</td>
+      <td>337053</td>
+    </tr>
+    <tr>
+      <td>piso1_CM_X_cm</td>
+      <td>1375</td>
+    </tr>
+    <tr>
+      <td>piso1_CM_Y_cm</td>
+      <td>699.281</td>
+    </tr>
+    <tr>
+      <td>piso1_inercia_peso_kgf_cm2</td>
+      <td>2.82976e+11</td>
+    </tr>
+    <tr>
+      <td>piso2_peso_sismico_kgf</td>
+      <td>337053</td>
+    </tr>
+    <tr>
+      <td>piso2_CM_X_cm</td>
+      <td>1375</td>
+    </tr>
+    <tr>
+      <td>piso2_CM_Y_cm</td>
+      <td>699.281</td>
+    </tr>
+    <tr>
+      <td>piso2_inercia_peso_kgf_cm2</td>
+      <td>2.82976e+11</td>
+    </tr>
+    <tr>
+      <td>piso3_altura_cm</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>piso3_peso_sismico_kgf</td>
+      <td>262071</td>
+    </tr>
+    <tr>
+      <td>piso3_CM_X_cm</td>
+      <td>1375</td>
+    </tr>
+    <tr>
+      <td>piso3_CM_Y_cm</td>
+      <td>698.001</td>
+    </tr>
+    <tr>
+      <td>piso3_inercia_peso_kgf_cm2</td>
+      <td>2.20911e+11</td>
+    </tr>
+    <tr>
+      <td>piso4_altura_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso4_peso_sismico_kgf</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso4_CM_X_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso4_CM_Y_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso4_inercia_peso_kgf_cm2</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso5_altura_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso5_peso_sismico_kgf</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso5_CM_X_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso5_CM_Y_cm</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>piso5_inercia_peso_kgf_cm2</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X1_Y1_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X1_Y2_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X1_Y3_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X1_Y4_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X1_Y5_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X2_Y1_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X2_Y2_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X2_Y3_macizo</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>paño_X2_Y4_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X2_Y5_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X3_Y1_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X3_Y2_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X3_Y3_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X3_Y4_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X3_Y5_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X4_Y1_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X4_Y2_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X4_Y3_macizo</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>paño_X4_Y4_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X4_Y5_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X5_Y1_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X5_Y2_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X5_Y3_macizo</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>paño_X5_Y4_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+    <tr>
+      <td>paño_X5_Y5_macizo</td>
+      <td>No aplicable (vacío)</td>
+    </tr>
+  </tbody>
+</table>
+<p>Identificadores reservados para prueba: 1, 5, 8, 10, 11, 26, 32, 34, 40, 45, 48, 61, 68, 71, 74, 77, 78, 79, 81, 85, 87, 88, 99, 109, 114, 116, 119, 125, 127, 132, 133, 138, 141, 146, 150, 163, 167, 171, 173, 174, 179, 180, 185, 187, 192, 194, 209, 210, 215, 217, 220, 224, 230, 236, 238, 244, 248, 258, 260, 269, 272, 291, 293, 303, 305, 316, 323, 326, 327, 332, 333, 337, 340, 355, 367, 368, 370, 372, 390, 391, 392, 397, 398, 413, 420, 421, 426, 429, 434, 436, 440, 446, 448, 452, 455, 458, 467, 469, 475, 484, 493, 506, 511, 515, 522, 526, 539, 542, 551, 563, 580, 586, 593, 594, 609, 614, 618, 619, 625, 627, 633, 636, 641, 649, 651, 662, 670, 671, 673, 676, 677, 680, 681, 682, 683, 687, 692, 697, 705, 708, 712, 713, 714, 718, 720, 728, 737, 740, 766, 771, 774, 781, 786, 788, 793, 799, 804, 810, 811, 813, 816, 818, 821, 827, 834, 843, 847, 852, 861, 865, 866, 874, 879, 886, 887, 888, 892, 894, 897, 898, 900, 902, 915, 924, 943, 948, 952, 954, 955, 958, 959, 960, 966, 967, 969, 971, 973, 974, 975, 979, 990, 992, 1008, 1011, 1012, 1027, 1039, 1041, 1051, 1064, 1069, 1073, 1074, 1079, 1080, 1083, 1085, 1088, 1089, 1090, 1098, 1112, 1113, 1119, 1124, 1125, 1126, 1139, 1141, 1143, 1144, 1145, 1154, 1155, 1159, 1162, 1167, 1170, 1174, 1175, 1178, 1192, 1194, 1196, 1199, 1207, 1210, 1212, 1218, 1222, 1228, 1237, 1238, 1240, 1241, 1243, 1247, 1255, 1256, 1260, 1263, 1274, 1281, 1282, 1307, 1311, 1333, 1338, 1346, 1348, 1349, 1351, 1353, 1361, 1366, 1376, 1377, 1378, 1383, 1385, 1390, 1392, 1397, 1404, 1407, 1417, 1418, 1421, 1422, 1427, 1431, 1446, 1448, 1460, 1466, 1470, 1479, 1480, 1482, 1483.</p>
+<p>Excel utilizado: estructuras.xlsx. Las predicciones heredan las hipótesis y límites de la base de entrenamiento.</p></html>

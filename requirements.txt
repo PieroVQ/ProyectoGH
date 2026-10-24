@@ -1,0 +1,17 @@
+cloudpickle==3.1.2
+et_xmlfile==2.0.0
+joblib==1.6.0
+narwhals==2.27.1
+numpy==2.5.4
+openpyxl==3.1.5
+pandas==3.1.0
+python-dateutil==3.0.0
+scikit-learn==1.9.1
+scipy==1.18.1
+six==1.17.0
+threadpoolctl==3.7.0
+tzdata==2026.5
+openseespy==3.8.0.0
+openseespywin==3.8.0.0; sys_platform == "win32"
+plotly==7.1.0
+pytest==9.1.1

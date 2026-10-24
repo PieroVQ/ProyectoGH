@@ -1,0 +1,8 @@
+{
+  "estructuras": 1500,
+  "familias": 1500,
+  "semilla": 20261119,
+  "intentos": 2368,
+  "segundos": 250.11000000004424,
+  "nota": "Una alternativa por familia. Base independiente para selecci\u00f3n y prueba ML; no usa checkpoints del generador habitual."
+}
