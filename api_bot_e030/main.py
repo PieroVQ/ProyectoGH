@@ -13,7 +13,7 @@ import unicodedata
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 import joblib
 import numpy as np
@@ -21,6 +21,7 @@ import pandas as pd
 from fastapi import Depends, FastAPI, Header, HTTPException, Request
 from fastapi.responses import Response
 from pydantic import BaseModel, Field
+from api_bot_e030.figuras import FIGURES, figure_metadata, render_figure
 
 ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parent
@@ -38,7 +39,7 @@ MODEL_SHA256 = hashlib.sha256(MODEL_FILE.read_bytes()).hexdigest()
 DB_PATH = Path(os.getenv("BOT_DB_PATH", str(ROOT / "consultas.sqlite3")))
 API_TOKEN = os.getenv("BOT_API_TOKEN", "")
 
-app = FastAPI(title="Nexo Sísmico · Backend RC Bot", version="0.1.0")
+app = FastAPI(title="Nexo Sísmico · Backend RC Bot", version="0.2.0")
 
 
 class ValidationRequest(BaseModel):
@@ -52,6 +53,7 @@ class QueryRequest(ValidationRequest):
     chat_id: str = Field(default="", max_length=80)
     user_id: str = Field(default="", max_length=80)
     idempotency_key: str = Field(min_length=1, max_length=240)
+    origen_datos: Literal["no_declarado", "real_declarado", "prueba_sintetica"] = "no_declarado"
 
 
 def require_api_key(authorization: str | None = Header(default=None)) -> None:
@@ -156,6 +158,14 @@ def validate(req: ValidationRequest) -> tuple[pd.DataFrame | None, list[str], li
         return None, errors, out_of_domain
 
     frame = pd.DataFrame([{k: row.get(k, np.nan) for k in INPUTS}], columns=INPUTS)
+    floors = int(frame.at[0, "pisos"])
+    heights = [frame.at[0, f"piso{i}_altura_cm"] for i in range(1, 6)]
+    if any(pd.isna(v) or v <= 0 for v in heights[:floors]):
+        errors.append("Complete las alturas positivas de los pisos existentes.")
+    if any(not pd.isna(v) for v in heights[floors:]):
+        errors.append("Deje vacías las alturas de los pisos inexistentes.")
+    if not errors and not np.isclose(sum(heights[:floors]), frame.at[0, "altura_total_cm"], rtol=1e-8, atol=1e-6):
+        errors.append("La suma de alturas no coincide con la altura total.")
     for axis in ("X", "Y"):
         count = int(frame.at[0, f"vanos_{axis}"])
         spans = [frame.at[0, f"luz_{axis}_{i}_cm"] for i in range(1, 6)]
@@ -177,6 +187,8 @@ def make_result(req: QueryRequest, frame: pd.DataFrame, query_id: str) -> dict[s
     for target in TARGETS:
         estimator = PACKAGE["modelos"][target]
         value = float(estimator.predict(frame)[0])
+        if not math.isfinite(value):
+            raise ValueError(f"El modelo devolvió una salida no finita: {target}.")
         config = getattr(estimator, "configuracion", None)
         if config is None and getattr(estimator, "modelos", None):
             config = "+".join(getattr(m, "configuracion", "modelo") for m in estimator.modelos)
@@ -196,6 +208,7 @@ def make_result(req: QueryRequest, frame: pd.DataFrame, query_id: str) -> dict[s
     return {
         "consulta_id": query_id,
         "estado": "completada",
+        "origen_datos": req.origen_datos,
         "creada_en": now,
         "parametros_confirmados": normalized,
         "unidades": {k: metadata_for(k)["unidad"] for k in INPUTS},
@@ -215,7 +228,7 @@ def make_result(req: QueryRequest, frame: pd.DataFrame, query_id: str) -> dict[s
             "url": "https://github.com/PieroVQ/ProyectoGH",
         }],
         "entradas_107": input_rows,
-        "archivos": [],
+        "archivos": figure_metadata(),
         "metricas_originales": {},
     }
 
@@ -312,7 +325,18 @@ def get_query(consulta_id: str) -> dict[str, Any]:
 
 @app.get("/consultas/{consulta_id}/archivos/{archivo_id}", dependencies=[Depends(require_api_key)])
 def get_file(consulta_id: str, archivo_id: str) -> Response:
-    raise HTTPException(404, "Esta consulta no contiene el archivo solicitado.")
+    result = get_query(consulta_id)
+    available = {f.get("archivo_id") for f in result.get("archivos", [])}
+    if archivo_id not in available or archivo_id not in FIGURES:
+        raise HTTPException(404, "Esta consulta no contiene el archivo solicitado.")
+    try:
+        png = render_figure(result, archivo_id)
+    except Exception as exc:
+        raise HTTPException(500, "No se pudo representar la figura de esta consulta.") from exc
+    return Response(png, media_type="image/png", headers={
+        "Content-Disposition": f'attachment; filename="{FIGURES[archivo_id][0]}"',
+        "Cache-Control": "private, no-store",
+    })
 
 
 @app.post("/informes/pdf", dependencies=[Depends(require_api_key)])
@@ -347,6 +371,7 @@ async def create_report_pdf(request: Request) -> Response:
         footer = html_parts.get("footer.html", b"").decode("utf-8-sig")
         footer = footer.replace('<span class="pageNumber"></span>', "__PAGE_NUMBER__")
         footer = footer.replace('<span class="totalPages"></span>', "__PAGE_COUNT__")
+        footer = re.sub(r"<(style|script)\b[^>]*>.*?</\1\s*>", "", footer, flags=re.IGNORECASE | re.DOTALL)
         footer_text = " ".join(html_lib.unescape(part) for part in re.findall(r">([^<>]+)<", footer))
         footer_text = " ".join(footer_text.split())
         if footer_text:
@@ -357,9 +382,12 @@ async def create_report_pdf(request: Request) -> Response:
             )
             footer_div = '<div id="report-footer">' + safe_footer + "</div>"
             html = html.replace("</body>", footer_div + "</body>")
+            # La plantilla n8n incluye una regla @page simple; reemplazarla
+            # evita redefinir la página y deja espacio suficiente al pie.
+            html = re.sub(r"@page\s*\{[^{}]*\}", "", html)
             html = html.replace("</style>",
-                "@page { @frame contentFrame { left: 18mm; width: 174mm; top: 22mm; height: 255mm; } "
-                "@frame reportFooter { -pdf-frame-content: report-footer; left: 18mm; width: 174mm; top: 280mm; height: 8mm; } }"
+                "@page { size: A4; @frame contentFrame { left: 18mm; width: 174mm; top: 22mm; height: 252mm; } "
+                "@frame reportFooter { -pdf-frame-content: report-footer; left: 18mm; width: 174mm; top: 280mm; height: 11mm; } }"
                 "#report-footer { font-family: Georgia, serif; font-size: 8pt; color: #444; text-align: center; }"
                 "</style>", 1)
 
