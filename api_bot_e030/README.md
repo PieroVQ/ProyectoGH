@@ -47,6 +47,6 @@ El esquema OpenAPI está en `/docs`. Endpoints usados por n8n:
 - `POST /informes/pdf`: recibe `index.html` y `footer.html` como archivos
   multipart llamados `files` y devuelve un PDF.
 
-El flujo **Generar y entregar informe** debe llamar a
-`<BACKEND_URL>/informes/pdf` con la misma credencial Bearer. Su nodo actual
-todavía apunta a Gotenberg y necesita ese ajuste al desplegar la API.
+En n8n, el flujo **Generar y entregar informe** debe llamar a
+`<BACKEND_URL>/informes/pdf` con la misma credencial Bearer. Si una copia
+importada del flujo aún apunta a Gotenberg, cambie esa URL antes de publicarla.
